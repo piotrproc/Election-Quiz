@@ -6,9 +6,11 @@ import os
 import sys
 from game_app.utils.ModuleManager import ModuleManager
 
-if __name__ == "__main__":
-    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "Platformizacja.settings")
 
+if __name__ == "__main__":
+
+    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "Platformizacja.settings")
+	print("123")
     module_manager = ModuleManager()
     module_manager.init_all_modules()
     print(module_manager.get_all_modules())
